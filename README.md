@@ -1,6 +1,6 @@
 # streaming
 
-## Rasbian
+## Raspbian
 ```
 $ uname -a
 Linux raspberrypi 4.19.57+ #1244 Thu Jul 4 18:42:50 BST 2019 armv6l GNU/Linux
@@ -71,7 +71,7 @@ $ sudo ln -s /dev/shm/ hls
 ```
 $ sudo vim /var/www/html/index.html
 
-See https://github.com/video-dev/hls.js
+# See: https://github.com/video-dev/hls.js
 ```
 
 ## rtmp
@@ -115,5 +115,8 @@ $ sudo systemctl restart nginx
 $ scripts/start-streaming.sh
 ```
 ```
-See http://[ip]:55555
+# See: http://[ip]:55555
+```
+```
+$ scripts/stop-streaming.sh
 ```

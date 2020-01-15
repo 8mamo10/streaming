@@ -84,6 +84,7 @@ $ sudo sh -c "echo \"include /etc/nginx/conf.d/rtmp;\" >> /etc/nginx/nginx.conf"
 ## nginx setting
 ```
 $ sudo vim /etc/nginx/conf.d/default.conf
+$ sudo vim /etc/nginx/sites-available/default
 $ sudo systemctl daemon-reload
 $ sudo systemctl restart nginx
 ```

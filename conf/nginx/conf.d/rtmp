@@ -1,0 +1,17 @@
+rtmp {
+    server {
+        listen 1935;
+        chunk_size 4096;
+        allow play all;
+        access_log /var/log/nginx/rtmp_access.log;
+        application live {
+            live on;
+            hls on;
+            record off;
+            hls_path /var/www/html/live/hls;
+            hls_fragment 1s;
+            hls_type live;
+        }
+    }
+}
+

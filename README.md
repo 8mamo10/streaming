@@ -105,7 +105,7 @@ Initially this error occurred. So I adjusted the video_size. (432x240 -> 640x480
 ## basic auth
 ```
 $ sudo apt install apache2-utils
-$ sudo htpasswd -c /var/www/.htpasswd streamer-8mamo10
+$ sudo htpasswd -c /var/www/.htpasswd [username]
 $ sudo vim /etc/nginx/conf.d/default.conf # enable auth_basic
 $ sudo systemctl daemon-reload
 $ sudo systemctl restart nginx
